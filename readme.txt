@@ -10,11 +10,11 @@ pip install -r requirements.txt
 # ---------------------------------
 # resetting stuff manually
 # ---------------------------------
-raspi-gpio set 21 ip    # reset
-raspi-gpio get 21	# print status
+raspi-gpio set 21 ip    # switching to input 
+raspi-gpio set 21 op    # switching to output
+raspi-gpio get 21	    # print status
 raspi-gpio set 21 dh	# turn on
 raspi-gpio set 21 dl	# turn off
-raspi-gpio set 21 op
 
 
 # V3 - ipaddress
